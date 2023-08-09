@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*
+{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+body
+{
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    position: relative;
+}
+main
+{
+    min-height: 60vh;
+    width: 45%;
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.one
+{
+    grid-column: span 2;
+    background-color: white;
+    padding: 2.5rem;
+}
+.one :nth-child(1){
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+.one :nth-child(2){
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.one :nth-child(3){
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.two
+{
+    background-color: hsl(179, 62%, 43%);
+    padding: 2.5rem;
+}
+.two :nth-child(1)
+{
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.two :nth-child(2){
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 5px;
+   display: flex;
+   align-items: center;
+}
+span
+{
+    color: hsl(204, 43%, 93%);
+    margin-left: 15px;
+    font-size: 0.5rem;
+    font-weight: 400;
+    /* margin-bottom: 15px; */
+    margin-top: 15px;
+    opacity: 0.5;
+}
+.two :nth-child(3){
+    color: hsl(204, 43%, 93%);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+button
+{
+    width: 95%;
+    padding: 12px;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 6px;
+    color: white;
+    letter-spacing: 1px;
+}
+button:hover
+{
+    cursor: pointer;
+}
+.three
+{
+    
+    background-color: hsl(179, 70%, 41%);
+    opacity: 0.7;
+    padding: 2.5rem;
+}
+.three :nth-child(1)
+{
+    color:white;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.three :nth-child(2)
+{
+    color: hsl(204, 43%, 93%);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-right: 3.5rem;
+    letter-spacing: 1px;
+}
+footer
+{
+    position: absolute;
+    bottom: 5%;
+}
+@media(max-width:450px)
+{
+    /* body{
+        width: 100%;
+        justify-content: center;
+    } */
+    main{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+    .one{
+        padding-right: 6rem;
+        padding: 2rem 1.5rem;
+    }
+    .two
+    {
+        padding-right: 6rem;
+        padding: 2rem 1.5rem;
+    }
+    .three 
+    {
+      padding-right: 6rem;
+      padding: 2rem 1.5rem; 
+      padding-right: 4rem;
+      /* margin-bottom: 40px; */
+    }
+    .three p{
+        font-size: 1rem;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        bottom: 2%;
+        padding:0 2rem;
+    }
+}
